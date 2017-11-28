@@ -15,10 +15,8 @@ test('it renders', function(assert) {
 
   // Template block usage:
   this.render(hbs`
-    {{#gallery-image}}
-      template block text
-    {{/gallery-image}}
+    {{gallery-image}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().text().trim(), '');
 });
