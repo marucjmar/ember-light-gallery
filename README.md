@@ -1,4 +1,4 @@
-# Ember Light Gallery integration Addon
+# Ember lightGallery integration Addon
 
 Lightweight, full customizable addon for [lightGallery](http://sachinchoolur.github.io/lightGallery/) plugin! This addon is compatible with fastboot!
 
