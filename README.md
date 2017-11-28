@@ -1,6 +1,6 @@
 # Ember Light Gallery integration Addon
 
-Light-weight, and full customizable addon for light-gallery.js plugin!
+Lightweight, and full customizable addon for [lightGallery](http://sachinchoolur.github.io/lightGallery/) plugin!
 
 # Demo
 Click

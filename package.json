@@ -1,17 +1,29 @@
 {
   "name": "ember-light-gallery",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Ember addon for ambitious gallery by lightGallery",
   "keywords": [
-    "ember-addon"
+    "lightbox",
+    "gallery",
+    "light",
+    "lightgallery",
+    "light-gallery",
+    "images",
+    "image",
+    "ember",
+    "cli",
+    "marucjmar"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Marcin Lazar",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marucjmar/ember-light-gallery.git"
+  },
   "scripts": {
     "build": "ember build",
     "start": "ember serve",
