@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Ember addon for ambitious gallery by lightGallery",
   "keywords": [
+    "ember-addon",
     "lightbox",
     "gallery",
     "light",
