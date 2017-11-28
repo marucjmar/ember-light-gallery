@@ -4,7 +4,7 @@
 let requiredPath = {
   css: ['lightgallery/src/css/lightgallery.css'],
   fonts: ['lightgallery/src/fonts/lg.ttf', 'lightgallery/src/fonts/lg.woff', 'lightgallery/src/fonts/lg.eot'],
-  images: ['lightgallery/src/img/loading.gif'],
+  img: ['lightgallery/src/img/loading.gif'],
   vendor: ['lightgallery/src/js/lightgallery.js']
 }
 const availablePlugins = ['thumbnail', 'autoplay', 'video', 'fullscreen', 'pager', 'zoom', 'hash', 'share']
