@@ -1,30 +1,11 @@
 # Ember Light Gallery integration Addon
 
-Lightweight, and full customizable addon for [lightGallery](http://sachinchoolur.github.io/lightGallery/) plugin!
+Lightweight, full customizable addon for [lightGallery](http://sachinchoolur.github.io/lightGallery/) plugin! This addon is compatible with fastboot!
 
 # Installation
 ```bash
 ember install ember-light-gallery
 ```
-
-# Configuration
-environment.js (optional config)
-
-```
-ENV = {
-  ...,
-  'ember-light-gallery': {
-    plugins: ['thumbnail', 'fullscreen', 'zoom'],
-    transitions: true
-  }
-}
-```
-
-| Key           | Type             | Available Values  | Default Value |
-| ------------- |:----------------:|:-----------------:|:-------------:|
-| plugins       | Array of string  |  ['thumbnail', 'autoplay', 'video', 'fullscreen', 'pager', 'zoom', 'hash', 'share'] | ['thumbnail', 'fullscreen']
-| transitions   | Boolean| true, false | true
-
 
 # Usage documentation
 
@@ -50,6 +31,26 @@ export default Controller.extend({
   {{gallery.image href=image}}
 {{/light-gallery-content}}
 ```
+
+
+# Configuration
+environment.js (optional config)
+
+```
+ENV = {
+  ...,
+  'ember-light-gallery': {
+    plugins: ['thumbnail', 'fullscreen', 'zoom'],
+    transitions: true
+  }
+}
+```
+
+| Key           | Type             | Available Values  | Default Value |
+| ------------- |:----------------:|:-----------------:|:-------------:|
+| plugins       | Array of string  |  ['thumbnail', 'autoplay', 'video', 'fullscreen', 'pager', 'zoom', 'hash', 'share'] | ['thumbnail', 'fullscreen']
+| transitions   | Boolean| true, false | true
+
 
 # Customization
 
