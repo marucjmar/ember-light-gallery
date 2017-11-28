@@ -70,7 +70,7 @@ export default Controller.extend({
 })
 ```
 ```hbs
-{{#light-gallery-content collection=images thumbnail=false as |image gallery|}}
+{{#light-gallery-content collection=images options=options as |image gallery|}}
   {{gallery.image href=image}}
 {{/light-gallery-content}}
 ```
