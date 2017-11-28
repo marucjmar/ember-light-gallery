@@ -2,9 +2,6 @@
 
 Lightweight, and full customizable addon for [lightGallery](http://sachinchoolur.github.io/lightGallery/) plugin!
 
-# Demo
-Click
-
 # Installation
 ```bash
 ember install ember-light-gallery
@@ -93,3 +90,4 @@ export default Controller.extend({
 To do
 - [ ] Captions
 - [ ] Videos
+- [ ] Demo
