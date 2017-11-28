@@ -1,3 +1,12 @@
 <h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+{{#light-gallery-content thumbnail=true options=options as |gallery|}}
+  {{gallery.image href="https://cdn-images-1.medium.com/max/1600/1*N5acmEwSyRjGrmuE94aVrQ.png"}}
+  {{gallery.image href="https://petco.i.lithium.com/t5/image/serverpage/image-id/12844i1B9E6850F85391A2/image-size/original?v=v2&px=-1"}}
+  {{gallery.image href="https://cdn-images-1.medium.com/max/1600/1*N5acmEwSyRjGrmuE94aVrQ.png"}}
+{{/light-gallery-content}}
+
+
+{{#light-gallery-content thumbnail=true collection=images as |image gallery|}}
+  {{gallery.image href=image}}
+{{/light-gallery-content}}

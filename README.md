@@ -1,26 +1,95 @@
-# ember-light-gallery
+# Ember Light Gallery integration Addon
 
-This README outlines the details of collaborating on this Ember addon.
+Light-weight, and full customizable addon for light-gallery.js plugin!
 
-## Installation
+# Demo
+Click
 
-* `git clone <repository-url>` this repository
-* `cd ember-light-gallery`
-* `npm install`
+# Installation
+```bash
+ember install ember-light-gallery
+```
 
-## Running
+# Configuration
+environment.js
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+```
+ENV = {
+  ...,
+  'ember-light-gallery': {
+    plugins: ['thumbnail', 'fullscreen', 'zoom'],
+    transitions: true
+  }
+}
+```
 
-## Running Tests
+| Key           | Type             | Available Values  | Default Value |
+| ------------- |:----------------:|:-----------------:|:-------------:|
+| plugins       | Array of string  |  ['thumbnail', 'autoplay', 'video', 'fullscreen', 'pager', 'zoom', 'hash', 'share'] | ['thumbnail', 'fullscreen']
+| transitions   | Boolean| true, false | false
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
 
-## Building
+# Usage documentation
 
-* `ember build`
+Simple component
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+```hbs
+{{#light-gallery-content as |gallery|}}
+  {{gallery.image href="http://my-image1.jpg"}}
+  {{gallery.image href="http://my-image2.jpg"}}
+  {{gallery.image href="http://my-image3.jpg"}}
+{{/light-gallery-content}}
+```
+
+With provide collection param
+```js
+  export default Controller.extend({
+  images: ['http://my-image1.jpg', 'http://my-image2.jpg', 'http://my-image3.jpg']
+  })
+```
+
+```hbs
+{{#light-gallery-content collection=images as |image gallery|}}
+  {{gallery.image href=image}}
+{{/light-gallery-content}}
+```
+
+# Customization
+
+Params is full suported to [lightgallery documentation](http://sachinchoolur.github.io/lightGallery/docs/api.html)
+
+You can provide explicit params to component
+```hbs
+{{#light-gallery-content collection=images thumbnail=false as |image gallery|}}
+  {{gallery.image href=image}}
+{{/light-gallery-content}}
+```
+
+Or with options param
+```js
+  export default Controller.extend({
+  images: ['http://my-image1.jpg', 'http://my-image2.jpg', 'http://my-image3.jpg'],
+  options: {thumbnail: false}
+  })
+```
+```hbs
+{{#light-gallery-content collection=images thumbnail=false as |image gallery|}}
+  {{gallery.image href=image}}
+{{/light-gallery-content}}
+```
+
+You can mixin explicit params and `options` param
+```js
+  export default Controller.extend({
+  images: ['http://my-image1.jpg', 'http://my-image2.jpg', 'http://my-image3.jpg'],
+  options: { mode: 'lg-zoom-in-out' }
+  })
+```
+```hbs
+{{#light-gallery-content collection=images thumbnail=false options=options as |image gallery|}}
+  {{gallery.image href=image}}
+{{/light-gallery-content}}
+
+To do
+- [ ] Captions
+- [ ] Videos

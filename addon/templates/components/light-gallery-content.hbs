@@ -1,0 +1,7 @@
+{{#if collection}}
+  {{#each collection as |item|}}
+    {{yield item (hash image=(component 'gallery-image'))}}
+  {{/each}}
+{{else}}
+  {{yield (hash image=(component 'gallery-image'))}}
+{{/if}}

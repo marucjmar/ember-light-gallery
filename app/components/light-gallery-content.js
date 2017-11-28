@@ -1,0 +1,1 @@
+export { default } from 'ember-light-gallery/components/light-gallery-content';
