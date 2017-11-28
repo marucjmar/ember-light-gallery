@@ -86,8 +86,9 @@ export default Controller.extend({
 {{#light-gallery-content collection=images thumbnail=false options=options as |image gallery|}}
   {{gallery.image href=image}}
 {{/light-gallery-content}}
+```
 
-To do
+# To do
 - [ ] Captions
 - [ ] Videos
 - [ ] Demo
