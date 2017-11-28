@@ -8,7 +8,7 @@ ember install ember-light-gallery
 ```
 
 # Configuration
-environment.js
+environment.js (optional config)
 
 ```
 ENV = {
